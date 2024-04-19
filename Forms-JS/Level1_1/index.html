@@ -6,14 +6,23 @@
     <title>Document</title>
 </head>
 <body>
+    
     <h2>Forms-JS-Level-1</h2>
     <form onsubmit="VerdoppelMich(); return false">
         <label type="number" for="number" id=""></label>
         <input type="number" id="alter">
         <button type="submit">Verdoppel mich</button>
     </form>
-<p id="ergebnis"></p>
-
+    <p id="ergebnis"></p>
+    
+    <h2>Form-JS-Level-1_2</h2>
+    <h4>Gib dein Geburtsjahr ein</h4>
+    <form onsubmit="berechneAlter(); return false">
+    <label for="jahr" id=""></label>
+    <input type="number" id="jahr"><br>
+    <button type="submit">Berechne mein Alter</button>
+    </form>
+    <p id="ergebnisZwei"></p>
     <script src="/Forms-JS/Level1_1/assets/js/index.js"></script>
 </body>
 </html>
