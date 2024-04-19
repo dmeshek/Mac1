@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Taschenrechner-mini/assets/css/styles.css">
+    <title>value, if/else</title>
+</head>
+<body>
+<h2>Mini Taschenrechner</h2>
+<section class="counter">
+    <h3 class="output-calc"></h3>
+    <button onclick="superFunction(+1)">+1</button>
+    <button onclick="superFunction(-1)">-1</button>
+    <button onclick="superFunction(+10)">+10</button>
+    <button onclick="superFunction(-10)">-10</button>
+    <button onclick="malZwei()">*2</button>
+    <button onclick="reset()">reset</button>
+</section>
+<button onclick="sayHi('Pius')">Hallo</button>
+<div class="btn-output"></div>
+
+
+<h2>Value auslesen</h2>
+<form onsubmit="getInputValue(); return false">
+    <!--return false stellt das default verhalten von Formularen aus (sprich die Seite wird nun nicht mehr neu geladen sobald das
+        Formular submitted wird)-->
+    <label for="name">Name</label>
+    <input type="text" id="name" class="name"/>
+    <label for="number">Alter</label>
+    <input type="number" id="number" class="number" />
+    <label for="range">range</label>
+    <input type="range" id="range" class="range" min="0" max="50" step="1" value="0" />
+    <label for="checkbox">Are you happy?</label>
+    <input type="checkbox" id="checkbox" class="checkbox">
+    <label for="bday">Bday</label>
+    <input type="date" id="bday" class="bday"/>
+ <input type="submit"/>
+ <p class="form-output"></p>
+</form>
+
+<h2>Login</h2>
+<form onsubmit="checkUserData(); return false">
+<label for="username">username</label>
+<input type="text" id="username"/>
+<label for="password">password</label>
+<input type="password" id="password"/>
+<input type="submit"/>
+<div id="login-feedback"></div>
+</form>
+
+<h2>add, remove, toggle</h2>
+<h3></h3>
+
+    <script src="/Taschenrechner-mini/assets/js/main.js"></script>
+</body>
+</html>
